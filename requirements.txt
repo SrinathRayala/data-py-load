@@ -1,0 +1,6 @@
+#pip install pandas
+#pip install mysql-connector-python
+#pip install psycopg2-binary
+pandas==1.0.4
+mysql-connector-python==8.0.20
+psycopg2-binary==2.8.5
