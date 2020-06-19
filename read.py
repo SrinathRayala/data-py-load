@@ -1,4 +1,4 @@
-from util import get_connection
+from utils import get_connection
 
 
 def read_table(db_details, table_name, limit=0):
@@ -13,6 +13,7 @@ def read_table(db_details, table_name, limit=0):
     cursor = connection.cursor()
     if limit == 0:
         query = f'SELECT * FROM {table_name}'
+        print("Source Query" , query)
     else:
         query = f'SELECT * FROM {table_name} LIMIT {limit}'
     cursor.execute(query)
